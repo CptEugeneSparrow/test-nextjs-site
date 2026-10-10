@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ClientCounter } from "@/components/ClientCounter";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
               <Link href="/" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Главная</Link>
               <Link href="/about" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">О проекте</Link>
               <Link href="/api/hello" className="text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">API Demo</Link>
+              <ThemeToggle />
             </div>
           </div>
         </div>
